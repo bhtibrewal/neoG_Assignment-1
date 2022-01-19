@@ -1,33 +1,25 @@
 import "./styles.css";
 
-const container = document.querySelector(".container");
-const addButton = document.querySelector(".add-btn");
-// const input = document.getElementById(".input");
-let arr = [
-  "apple",
-  "banana",
-  "grape",
-  "mango",
-  "peach",
-  "apple",
-  "banana",
-  "grape",
-  "mango",
-  "peach"
-];
-let outputarr = [];
+const chipInput = document.querySelector("#chip-input");
 
-function clickHandler() {
-  let num = Math.floor(Math.random() * 10);
-  // outputarr.push(arr[num]);
-  // console.log(num, outputarr);
+function addChip(text) {
+  const chipContainer = document.querySelector("#chip-box");
+  let chip = document.createElement("div");
+  chip.classList.add("chip");
 
-  container.innerHTML += `<div onclick="del(event)" class='chip flex '>
-  <p>${arr[num]}</p2>
-  <button class="x-btn" >x</button>
-  </div>`;
+  chip.innerHTML = `<p>${text}</p>
+  <button onclick="del(event)" class="x-btn" >x</button>`;
+  chipContainer.appendChild(chip);
 }
+chipInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    if (event.target.value === "") alert("enter chip text");
+    addChip(event.target.value);
+    event.target.value = "";
+  }
+});
 window.del = function del(event) {
+  console.log(event.target.parentElement);
   event.target.parentElement.remove();
 };
-addButton.addEventListener("click", clickHandler);
+window.onload = () => addChip("Lemon");
