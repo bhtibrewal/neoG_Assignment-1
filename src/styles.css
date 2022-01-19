@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+:root {
+  --container: #e0e0e0;
+  --chip-bg: #c6c6c6;
+  --chip-bg-hover: #bdbdbd;
+  --x-button: #929292;
+  --x-button-hover: #696969;
+}
+.container {
+  width: 100%;
+  min-height: 100px;
+  background: var(--container);
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0.5rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.chip {
+  border-radius: 1.4rem;
+  background: var(--chip-bg);
+  justify-content: space-around;
+  padding: 0 0.6rem;
+}
+.chip:hover {
+  background: var(--chip-bg-hover);
+}
+.x-btn {
+  background: var(--x-button);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  border: 0;
+  color: white;
+}
+.x-btn:hover {
+  background: var(--x-button-hover);
+}
+input {
+  background: transparent;
+  border: 0;
+}
