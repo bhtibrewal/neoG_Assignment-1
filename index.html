@@ -4,25 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/styles.css" />
 
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Component-Library</title>
   </head>
 
   <body>
-    <div class="container flex" id="chip-box">
-      <input
-        class="input"
-        id="chip-input"
-        type="text"
-        placeholder="Add Fruits..."
-      />
-    </div>
-
+    <main>
+      <h1 class="headings">Chips</h1>
+      <div class="container">
+        <!-- basic card -->
+        <div class="flex-c card basic">
+          <img
+            class="basic-card-img"
+            src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
+            alt=""
+          />
+          <div class="card-header">
+            <h1 class="">Our Changing Planet</h1>
+            <h2 class="">by Kurt Wagner</h2>
+          </div>
+        </div>
+      </div>
+      <h1 class="headings">Chips</h1>
+      <div class="container flex-r flex-center" id="chip-box">
+        <input
+          class="input chip-input"
+          type="text"
+          placeholder="Add Fruits..."
+        />
+      </div>
+    </main>
     <script src="src/index.js"></script>
   </body>
 </html>
