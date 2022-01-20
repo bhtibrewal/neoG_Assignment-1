@@ -1,9 +1,9 @@
 .card {
-  margin:auto;
+  margin: auto;
   border-radius: 4px;
   height: 400px;
   background: #ffff;
-  overflow: hidden;
+  border: thin solid var(--border);
 }
 .basic {
   width: 350px;
@@ -32,8 +32,35 @@
 .card-body {
   line-height: 1.25rem;
   font-size: 0.875rem;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 0.5rem;
 }
-.card-actions-icon path{
-  fill:aqua;
+.card-actions{
+  /* justify-content: space-between; */
 }
+.card-action-buttons {
+  background: transparent;
+  border: 0;
+  padding: 0 1rem;
+ 
+  font-size: 0.875rem;
+  line-height: 2.25rem;
+  font-weight: bolder;
+  letter-spacing: 0.0892857143em;
+  text-transform: uppercase;
+  color:var(--card-theme);
+}
+.card-actions-icon{
+  margin:0 4px;
+}
+.card-actions-icon svg{
+  opacity: 0.6;
+  padding:0.4rem;
+  width: 2.3rem;
+  height:2.3rem;
+  border-radius:50%;
+
+}
+.card-actions-icon svg:hover{
+  background:rgba(0, 0, 0,0.2);
+}
+
