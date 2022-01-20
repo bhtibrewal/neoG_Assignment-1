@@ -1,0 +1,39 @@
+.card {
+  margin:auto;
+  border-radius: 4px;
+  height: 400px;
+  background: #ffff;
+  overflow: hidden;
+}
+.basic {
+  width: 350px;
+  flex-direction: column;
+}
+.basic-card-img {
+  width: 100%;
+}
+.card-header {
+  padding: 1rem;
+}
+.card-header h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+.card-header h2,
+.card-body {
+  opacity: 0.54;
+}
+.card-header h2 {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+}
+.card-body {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0 1rem 1rem;
+}
+.card-actions-icon path{
+  fill:aqua;
+}

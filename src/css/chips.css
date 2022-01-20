@@ -1,0 +1,37 @@
+/* chips */
+.chip-container {
+  margin: 0 auto 5rem;
+  min-height: 100px;
+  background: var(--container);
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1rem;
+}
+.chip {
+    border-radius: 2rem;
+    background: var(--chip-bg);
+    padding: 0 0.6rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .chip:hover {
+    background: var(--chip-bg-hover);
+  }
+  .x-btn {
+    background: var(--x-button);
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    font-size: larger;
+  }
+  .x-btn:hover {
+    background: var(--x-button-hover);
+  }
+  
+  .chip-input {
+    flex-grow: 1;
+    order: 1;
+  }
+  
