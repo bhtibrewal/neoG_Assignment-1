@@ -8,14 +8,17 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: Roboto, sans-serif;
-}
 :root {
-  --container: #e7e7e7ce;
+  --primary-text-color:rgba(10, 10, 10, 0.95);
+  --secondary-text-color:rgba(0, 0, 0,0.6);
+  --light-bg:rgb(245, 245, 245);
+  --light-gray-bg:rgba(0, 0, 0,0.1);
+  --container: #ececec;
   --border:rgba(0, 0, 0,0.2);
+
   /* cards */
   --card-theme:#6200ee;
+
   /* chips */
   --chip-bg: #c6c6c6;
   --chip-bg-hover: #bdbdbd;
@@ -29,8 +32,12 @@ body {
 
   /* badge */
   --badges-theme:#3f51b5;
+  --badge-secondary:#ff4081;
 }
-
+body {
+  font-family: Roboto, sans-serif;
+  color:var(--primary-text-color);
+}
 /* element selector */
 input {
   background: transparent;

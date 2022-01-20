@@ -1,9 +1,53 @@
-.badge{
-    background-color: var(--badges-theme);
-    color:white;
-    border-radius:50%;
+.badge-1,
+.badge-2,
+.badge-3,
+.badge-4 {
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+}
+.badge {
+  background-color: var(--badges-theme);
+  color: var(--light-bg);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: smaller;
+}
+.badge-2 button,
+.badge-3 button {
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.badge-2 button {
+  color: var(--light-bg);
+  background: var(--badge-secondary);
+}
+.badge-3 button {
+  background: var(--light-bg);
+  color: var(--primary-text-color);
+  box-shadow: 2px 2px 4px 2px var(--secondary-text-color);
+}
+.badge-3 button:hover{
+    box-shadow: 1px 1px 4px  var(--secondary-text-color);
+}
+.badge-4 img {
+  border-radius: 50%;
+  width: 4rem;
+}
+.badge-4 .badge{
+    box-sizing:content-box;
+    border:medium solid var(--container);
+    background: #229922;
     width: 1.5rem;
     height: 1.5rem;
-    display:grid;
-    place-items:absolute;
+    top: -0.4rem;
+    right: -0.4rem;
 }
