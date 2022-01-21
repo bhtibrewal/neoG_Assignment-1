@@ -1,106 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+@import 'css/app.css';
 @import 'css/chips.css';
 @import 'css/cards.css';
 @import 'css/drawers.css';
 @import 'css/badge.css';
 @import 'css/snackbar.css';
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-:root {
-  --primary-text-color:rgba(10, 10, 10, 0.95);
-  --secondary-text-color:rgba(0, 0, 0,0.6);
-  --light-bg:rgb(245, 245, 245);
-  --light-gray-bg:rgba(0, 0, 0,0.1);
-  --container: #ececec;
-  --border:rgba(0, 0, 0,0.2);
-
-  /* cards */
-  --card-theme:#6200ee;
-
-  /* chips */
-  --chip-bg: #c6c6c6;
-  --chip-bg-hover: #bdbdbd;
-  --x-button: #929292;
-  --x-button-hover: #696969;
-
-  /* drawer */
-  --drawer-bg: rgb(253, 253, 253);
-  --drawer-theme-bg: rgba(98, 0, 238, 0.2);
-  --drawer-theme: rgba(98, 0, 238, 0.87);
-
-  /* badge */
-  --badges-theme:#3f51b5;
-  --badge-secondary:#ff4081;
-
-  /* snackbar */
-  --snackbar-bg: #333;
-  --snackbar-theme:#bb86fc;
-
-}
-html{
-  /* font-size:62.5%; */
-}
-@media screen and (max-width:500px){
-  html{
-     font-size:62.5%;
-  }
-}
-body {
-  font-family: Roboto, sans-serif;
-  color:var(--primary-text-color);
-}
-/* element selector */
-input {
-  background: transparent;
-  border: 0;
-}
-input:focus {
-  outline: none;
-}
-
-/* utils */
-.position-center{
-  display:grid;
-  place-content: center;
-}
-.flex-align-center {
-  display: flex;
-  align-items: center;
-}
-.flex-c {
-  display: flex;
-  flex-direction: column;
-}
-.flex-r {
-  display: flex;
-  flex-flow: row wrap;
-}
-.btn{
-  border: 0;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  cursor:pointer;
-  font-size: 0.875rem;
-}
-.headings {
-  margin: 1rem;
-}
-
-/*  */
-main {
-  padding: 1rem;
-}
-.container {
-  margin: 0 auto 5rem;
-  min-height: 100px;
-  background: var(--container);
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 2rem;
-}
 
 
 
