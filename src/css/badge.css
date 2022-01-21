@@ -10,22 +10,15 @@
   background-color: var(--badges-theme);
   color: var(--light-bg);
   border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
 
-  display: grid;
-  place-items: center;
   position: absolute;
   top: -0.5rem;
   right: -0.5rem;
   font-size: smaller;
 }
-.badge-2 button,
-.badge-3 button {
-  border: 0;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-}
+
 .badge-2 button {
   color: var(--light-bg);
   background: var(--badge-secondary);
@@ -46,8 +39,8 @@
     box-sizing:content-box;
     border:medium solid var(--container);
     background: #229922;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     top: -0.4rem;
     right: -0.4rem;
 }

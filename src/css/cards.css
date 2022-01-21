@@ -3,22 +3,19 @@
   border-radius:0.25rem;
   background: var(--light-bg);
   border: thin solid var(--border);
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .basic {
-  height: 25rem;
   width: 21rem;
-  flex-direction: column;
+  gap:1rem;
+  /* padding:1rem; */
 }   
-.basic-card-img {
-  width: 100%;
-}
 .card-header {
-  padding: 1rem;
+  padding:0 1rem;
 }
 .card-header h1 {
   font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: 0.0125em;
 }
 
 .card-header h2 {
@@ -30,37 +27,36 @@
 .card-body {
   line-height: 1.25rem;
   font-size: 0.875rem;
-  padding: 0 1rem 0.5rem;
+  padding: 0 1rem ;
   color:var(--secondary-text-color);
 }
 .card-actions>*{
   cursor:pointer;
 }
-.card-action-buttons {
+.card-action-buttons button{
   background: transparent;
-  border: 0;
   padding: 0 1rem;
   font-size: 0.875rem;
   line-height: 2.25rem;
   font-weight: bolder;
   text-transform: uppercase;
   color:var(--card-theme);
-  border-radius:0.25rem;
 }
-.card-actions-icon{
-  margin:0 4px;
+.card-action-icon{
+  margin:0 .25rem;
 }
-.card-actions-icon svg{
-  fill:rgba(0, 0, 0,0.2);
+.card-action-icon svg{
   padding:0.4rem;
   width: 2.3rem;
   height:2.3rem;
   border-radius:50%;
 }
-.card-action-buttons:hover, .card-actions-icon svg:hover{
+.card-action-buttons button:hover, .card-actions-icon svg:hover{
   background:var(--light-gray-bg);
 }
 
-.card-actions-icon path{
+.card-action-icon path{
   fill:var(--secondary-text-color);
 }
+
+/* review icons again */

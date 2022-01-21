@@ -2,7 +2,6 @@
 .drawer {
     margin:auto;
     background: var(--drawer-bg);
-    height: 100%;
     width: 16rem;
     border: thin solid var(--border);
     transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,8 +32,8 @@
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 500;
-  height: 40px;
-  margin: 8px;
+  height: 2.5rem;
+  margin: .5rem;
   padding: 0 0.25rem;
   border-radius: 0.25rem;
 

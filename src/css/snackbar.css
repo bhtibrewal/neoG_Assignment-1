@@ -1,0 +1,25 @@
+.snackbar {
+  gap:1rem;
+  padding: 1rem;
+  background: var(--snackbar-bg);
+  border-radius: 0.25rem;
+  color: var(--primary-text-color);
+  color: var(--light-bg);
+}
+.snackbar p{
+    /* font-size:.8rem; */
+}
+.snackbar .close {
+  color: var(--light-bg);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  display:grid;
+  place-content: center;
+}
+.snackbar .retry {
+  color: var(--snackbar-theme);
+  background: transparent;
+  
+}
