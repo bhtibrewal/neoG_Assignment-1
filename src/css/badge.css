@@ -34,8 +34,9 @@
 }
 .badge-4 img {
   border-radius: 50%;
-  width: 4rem;
+  width: 5rem;
 }
+
 .badge-4 .badge{
     box-sizing:content-box;
     border:medium solid var(--container);

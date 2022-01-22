@@ -11,55 +11,49 @@
 
   <body class="main-container">
     <aside class="sidebar flex-c">
-      <div class="logo_content">
-        <div class="logo_name">neoG-UI</div>
-        <i class="bx bx-menu"></i>
+      <div class="avatar">
+        <img
+          alt=""
+          src="https://avatars.githubusercontent.com/u/42600164?v=4"
+        />
       </div>
-      <ul class="nav_list">
-        <li>
-          <a href="./src/html/header.html">
-            <i class="bx bx-home-alt"></i>
-            <span class="links_name">Header</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://">
-            <i class="bx bx-bell"></i>
-            <span class="links_name">Alert</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://">
-            <i class="bx bx-home-alt"></i>
-            <span class="links_name">Avatar</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://">
-            <i class="bx bx-home-alt"></i>
-            <span class="links_name">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://">
-            <i class="bx bx-cart-alt"></i>
-            <span class="links_name">Cart</span>
-          </a>
-        </li>
-      </ul>
+      <div class="nav-list flex-c">
+        <span class="links_name">Header</span>
+        <span class="links_name">Alert</span>
+        <span class="links_name">Avatar</span>
+        <span class="links_name">Home</span>
+        <span class="links_name">Cart</span>
+      </div>
     </aside>
 
     <main class="main">
+      <!-- Tabs -->
+      <h1 class="headings">Tabs</h1>
+      <div class="container flex-r">
+        <div classs="tab ">
+          
+            <span >Header</span>
+            <span >Alert</span>
+            <span >Avatar</span>
+            <span >Home</span>
+            <span >Cart</span>
+          
+        </div>
+      </div>
+
       <!-- header -->
       <h1 class="headings">Header</h1>
       <div class="container flex-r">
+        <a href="./src/html/header.html">
+          <span>Header</span>
+        </a>
         <iframe src="./src/html/header.html"></iframe>
       </div>
-     
 
       <!-- dialog -->
       <h1 class="headings">Dialog</h1>
       <div class="container flex-r">
+        <!-- dialog 1 -->
         <div class="dialog flex-c">
           <h3 class="dialog-heading">Use location service?</h3>
           <p class="dialog-text">
@@ -71,7 +65,7 @@
             <button class="cta-btn btn">Disagree</button>
           </div>
         </div>
-
+        <!-- dialog 2 -->
         <div class="dialog flex-c">
           <h3 class="dialog-heading">Phone ringtone</h3>
           <div class="dialog-list flex-c">
@@ -101,7 +95,7 @@
         <!-- open snackbar button -->
         <button class="snackbar-btn btn">Open Snackbar</button>
       </div>
-      <!-- hidden sidebar -->
+      <!-- hidden snackbar -->
       <div class="snackbar snackbar-2 flex-align-center">
         <p>Can't send photo. Retry in 5 seconds.</p>
         <button class="retry btn">RETRY</button>

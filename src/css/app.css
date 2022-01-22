@@ -61,13 +61,11 @@ body {
   flex-grow:1;
   overflow-y:auto;
 }
+
+/* Hide Scroll bar */
 .main::-webkit-scrollbar {
   display:none;
-  /* height:10px; */
-  /* background-color: black; */
-  /* border-radius:5rem; */
 }
-
 /* Hide scrollbar for IE, Edge and Firefox  */
 .main{
   -ms-overflow-style: none;   /* IE and Edge */
@@ -79,9 +77,9 @@ iframe{
   border:none;
   min-width:22rem;
   min-height:10rem;
-  background:white;
-  
+  background:var(--light-bg);
 }
+
 input {
   background: transparent;
   border: 0;
