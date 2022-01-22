@@ -1,4 +1,26 @@
 
+// const mainBtn = document.querySelector(".main-btn");
+
+// const main = document.querySelector(".main");
+// mainBtn.addEventListener("click", () => {
+//   main.innerHTML = ``
+// })
+
+/* header */
+
+const header = document.querySelector(".header");
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    header.style.width= "auto";
+  } else {
+    document.querySelector(".header").style.display = "flex";
+  }
+}
+
+/* chips */
 const chipInput = document.querySelector(".chip-input");
 
 function addChip(text) {
@@ -23,7 +45,7 @@ window.del = function del(event) {
 };
 addChip("Lemon");
 
-//  Badge
+/* badge */
 
 const hideButton = document.querySelector(".hide-button");
 const badge = document.querySelector(".hide-badge");
@@ -33,13 +55,14 @@ hideButton.addEventListener("click", () => {
   on = !on;
 });
 
-// snackbar
+/* snackbar */
 
 const snackbarBtn = document.querySelector(".snackbar-btn");
 const snackbar = document.querySelector(".snackbar-2");
-snackbarBtn.addEventListener("click", () =>{
-  snackbar.style.display="flex";
+snackbarBtn.addEventListener("click", () => {
+  snackbar.style.display = "flex";
   setTimeout(() => {
-    snackbar.style.display="none";
+    snackbar.style.display = "none";
   }, 2000);
 })
+

@@ -4,19 +4,19 @@
 .badge-4 {
   position: relative;
   display: inline-block;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
   transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .badge {
   background-color: var(--badges-theme);
   color: var(--light-bg);
   border-radius: 50%;
-  width: 1.2rem;
+  min-width: 1.2rem;
   height: 1.2rem;
 
   position: absolute;
   top: -0.5rem;
-  right: -0.5rem;
+  right: -0.5rem;  
   font-size: smaller;
 }
 

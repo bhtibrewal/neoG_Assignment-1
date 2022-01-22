@@ -1,0 +1,39 @@
+.dialog {
+  margin: auto;
+  background: var(--light-bg);
+  border: thin solid var(--border);
+  max-width: 21rem;
+  padding:  2rem;
+  border-radius: 0.25rem;
+  gap: 1.5rem;
+}
+.dialog-text, .dialog-list label{
+  color: var(--secondary-text-color);
+}
+.dialog-btn {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .5rem;
+}
+.dialog-list {
+  height:10rem;
+  overflow:auto;
+  gap:1rem;
+}
+.dialog-list input{
+    margin-right: 2rem;
+}
+.dialog-list::-webkit-scrollbar{
+    display:none;
+}
+
+/* .dialog-btn .btn {
+  background: transparent;
+  color: var(--drawer-theme);
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.dialog-btn .btn:hover {
+  background: var(--drawer-theme-bg);
+} */

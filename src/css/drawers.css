@@ -1,7 +1,7 @@
 
 .drawer {
     margin:auto;
-    background: var(--drawer-bg);
+    background: var(--light-bg);
     width: 16rem;
     border: thin solid var(--border);
     transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);

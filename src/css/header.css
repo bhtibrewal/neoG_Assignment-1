@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background: var(--header-bg);
+  padding: 1rem;
+  color: white;
+}
+.fixed {
+  position: sticky;
+  top: -1rem;
+}
+
+.lorem-text {
+  font-size: larger;
+  padding: 1rem 2rem;
+}
+.header > svg {
+  margin-right: 2rem;
+}
+.header svg {
+  width: 1.5rem;
+}
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.right-icons {
+  margin-left: auto;
+}

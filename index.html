@@ -9,22 +9,103 @@
     <title>Component-Library</title>
   </head>
 
-  <body>
-    <main>
+  <body class="main-container">
+    <aside class="sidebar flex-c">
+      <div class="logo_content">
+        <div class="logo_name">neoG-UI</div>
+        <i class="bx bx-menu"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="./src/html/header.html">
+            <i class="bx bx-home-alt"></i>
+            <span class="links_name">Header</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://">
+            <i class="bx bx-bell"></i>
+            <span class="links_name">Alert</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://">
+            <i class="bx bx-home-alt"></i>
+            <span class="links_name">Avatar</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://">
+            <i class="bx bx-home-alt"></i>
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://">
+            <i class="bx bx-cart-alt"></i>
+            <span class="links_name">Cart</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <!-- header -->
+      <h1 class="headings">Header</h1>
+      <div class="container flex-r">
+        <iframe src="./src/html/header.html"></iframe>
+      </div>
+     
+
+      <!-- dialog -->
+      <h1 class="headings">Dialog</h1>
+      <div class="container flex-r">
+        <div class="dialog flex-c">
+          <h3 class="dialog-heading">Use location service?</h3>
+          <p class="dialog-text">
+            Let us help apps determine location. This means sending anonymous
+            location data to us, even when no apps are running.
+          </p>
+          <div class="dialog-btn flex-r">
+            <button class="cta-btn btn">Agree</button>
+            <button class="cta-btn btn">Disagree</button>
+          </div>
+        </div>
+
+        <div class="dialog flex-c">
+          <h3 class="dialog-heading">Phone ringtone</h3>
+          <div class="dialog-list flex-c">
+            <label><input type="radio" /> None</label>
+            <label><input type="radio" /> Callisto</label>
+            <label><input type="radio" /> Ganymede</label>
+            <label><input type="radio" /> Luna</label>
+            <label><input type="radio" /> Oberon</label>
+            <label><input type="radio" /> Phobos</label>
+          </div>
+
+          <div class="dialog-btn flex-r">
+            <button class="cta-btn btn">OK</button>
+            <button class="cta-btn btn">CANCEL</button>
+          </div>
+        </div>
+      </div>
+
       <!-- snackbar -->
       <h1 class="headings">Snackbar</h1>
       <div class="container flex-align-center">
-        <button class='snackbar-btn btn'>Open Snackbar</button>
         <div class="snackbar flex-align-center">
           <p>Can't send photo. Retry in 5 seconds.</p>
           <button class="retry btn">RETRY</button>
           <button class="btn close">X</button>
         </div>
-        <div class="snackbar snackbar-2 flex-align-center">
-          <p>Can't send photo. Retry in 5 seconds.</p>
-          <button class="retry btn">RETRY</button>
-          <button class="btn close">X</button>
-        </div>
+        <!-- open snackbar button -->
+        <button class="snackbar-btn btn">Open Snackbar</button>
+      </div>
+      <!-- hidden sidebar -->
+      <div class="snackbar snackbar-2 flex-align-center">
+        <p>Can't send photo. Retry in 5 seconds.</p>
+        <button class="retry btn">RETRY</button>
+        <button class="btn close">X</button>
       </div>
 
       <!-- badges -->
@@ -71,8 +152,8 @@
           </div>
           <div class="card-actions flex-align-center">
             <div class="card-action-buttons">
-              <button class="btn">READ</button>
-              <button class="btn">BOOKMARK</button>
+              <button class="cta-btn btn">READ</button>
+              <button class="cta-btn btn">BOOKMARK</button>
             </div>
 
             <span class="card-action-icon">
@@ -188,6 +269,7 @@
         </aside>
       </div>
     </main>
+
     <script src="src/index.js"></script>
   </body>
 </html>

@@ -33,15 +33,7 @@
 .card-actions>*{
   cursor:pointer;
 }
-.card-action-buttons button{
-  background: transparent;
-  padding: 0 1rem;
-  font-size: 0.875rem;
-  line-height: 2.25rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-  color:var(--card-theme);
-}
+
 .card-action-icon{
   margin:0 .25rem;
 }
@@ -51,10 +43,13 @@
   height:2.3rem;
   border-radius:50%;
 }
-.card-action-buttons button:hover, .card-actions-icon svg:hover{
-  background:var(--light-gray-bg);
+ .card-action-icon svg:hover{
+  background:var(--drawer-theme-bg);
 }
 
+.card-action-icon svg:hover path{
+  fill: var(--drawer-theme);
+}
 .card-action-icon path{
   fill:var(--secondary-text-color);
 }

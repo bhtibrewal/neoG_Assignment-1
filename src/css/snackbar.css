@@ -17,8 +17,7 @@
   width: 2rem;
   height: 2rem;
   background: transparent;
-  display: grid;
-  place-content: center;
+
 }
 .snackbar .retry {
   color: var(--snackbar-theme);
@@ -33,7 +32,7 @@
 .snackbar-2 {
   z-index: 4;
   display: none;
-  position: absolute;
+  position: fixed;
   bottom: 1vh;
   left: 50%;
   transform: translateX(-50%);

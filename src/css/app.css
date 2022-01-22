@@ -1,17 +1,16 @@
 * {
   margin: 0;
+  padding:0;
   box-sizing: border-box;
 }
 :root {
   --primary-text-color: rgba(10, 10, 10, 0.95);
   --secondary-text-color: rgba(0, 0, 0, 0.6);
-  --light-bg: rgb(245, 245, 245);
+  --light-bg: rgb(253, 253, 253);
   --light-gray-bg: rgba(0, 0, 0, 0.1);
   --container: #ececec;
   --border: rgba(0, 0, 0, 0.2);
-
-  /* cards */
-  --card-theme: #6200ee;
+  --header-bg: #07071f;
 
   /* chips */
   --chip-bg: #c6c6c6;
@@ -43,24 +42,59 @@
   html {
     font-size: 62.5%;
   }
+  .main-container{
+    flex-direction: column;
+  }
 }
 
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 }
+.main-container{
+  display:flex;
+  height:100vh;
+}
 
-main {
+.main {
   padding: 1rem;
+  flex-grow:1;
+  overflow-y:auto;
+}
+.main::-webkit-scrollbar {
+  display:none;
+  /* height:10px; */
+  /* background-color: black; */
+  /* border-radius:5rem; */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox  */
+.main{
+  -ms-overflow-style: none;   /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* element selector */
+iframe{
+  border:none;
+  min-width:22rem;
+  min-height:10rem;
+  background:white;
+  
+}
 input {
   background: transparent;
   border: 0;
 }
 input:focus {
   outline: none;
+}
+ul {
+  list-style: none;
+
+}
+a {
+  text-decoration: none;
 }
 
 /* utils */
@@ -87,6 +121,18 @@ input:focus {
   cursor: pointer;
   font-size: 0.875rem;
 }
+.cta-btn {
+  background: transparent;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  line-height: 2.25rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--drawer-theme);
+}
+.cta-btn:hover {
+  background: var(--drawer-theme-bg);
+}
 .headings {
   margin: 1rem;
 }
@@ -95,6 +141,6 @@ input:focus {
   min-height: 100px;
   background: var(--container);
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2rem;
   padding: 2rem;
 }
