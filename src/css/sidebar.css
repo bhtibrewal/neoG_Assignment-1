@@ -10,18 +10,15 @@
   transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
   
 }
-.avtar{
-  position:sticky;
-  top:-5px;
-}
+
 .avatar img {
   border-radius: 50%;
   width: 5rem;
   box-shadow: 0px 0px 20px -2px var(--light-bg);
-  
+
 }
 .nav-list{
-  max-height:70vh;
+  max-height:60vh;
   overflow-y: auto;
 }
 .nav-list span {
@@ -57,19 +54,15 @@
 }
 @media screen and (max-width: 600px) {
   .sidebar {
-    flex-direction: row;
+    flex-direction: row-reverse;
     width:100vw;
-    /* flex-wrap:wrap; */
   }
-  .avatar{
-    order:1;
-  }
+
   .nav-list {
     flex-direction: row;
     width:100vw;
     justify-content: center safe;
     overflow-y: auto;
-    
   }
 }
 

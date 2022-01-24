@@ -7,3 +7,4 @@ tabs.addEventListener("click", e => {
         e.target.setAttribute("id", "active-tab");
     }
 })  
+

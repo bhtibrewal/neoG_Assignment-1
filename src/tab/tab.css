@@ -1,6 +1,4 @@
-.tab{
-  transition: all 4s ease-in;
-}
+
 .tab span{
   padding: 0.5rem 1rem;
   cursor: default;

@@ -1,8 +1,16 @@
 .header {
-  width: 100%;
   background: var(--header-bg);
   padding: 1rem;
   color: white;
+  display:flex;
+  align-items:center;
+}
+.short{
+  width:fit-content;
+  border-bottom-right-radius: 50%;
+}
+.short h1{
+  display:none;
 }
 .fixed {
   position: sticky;
@@ -10,7 +18,7 @@
 }
 
 .lorem-text {
-  font-size: larger;
+  font-size: 2rem;
   padding: 1rem 2rem;
 }
 .header > svg {
@@ -25,4 +33,6 @@
 }
 .right-icons {
   margin-left: auto;
+  display:flex;
+  align-items:center;
 }
