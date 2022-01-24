@@ -1,0 +1,17 @@
+.tab{
+  transition: all 4s ease-in;
+}
+.tab span{
+  padding: 0.5rem 1rem;
+  cursor: default;
+  text-align: center;
+  /* position: relative; */
+}
+.tab span:hover{
+    background: var(--light-gray-bg);
+}
+#active-tab{
+    border-bottom:4px solid var(--drawer-theme);
+    color: var(--drawer-theme);
+    background: transparent;
+}

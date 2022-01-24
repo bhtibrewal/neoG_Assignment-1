@@ -3,6 +3,7 @@
   padding:0;
   box-sizing: border-box;
 }
+
 :root {
   --primary-text-color: rgba(10, 10, 10, 0.95);
   --secondary-text-color: rgba(0, 0, 0, 0.6);
@@ -57,19 +58,25 @@ body {
 }
 
 .main {
-  padding: 1rem;
+  padding: 2rem;
   flex-grow:1;
   overflow-y:auto;
 }
 
 /* Hide Scroll bar */
-.main::-webkit-scrollbar {
+.main::-webkit-scrollbar, .main-iframe::-webkit-scrollbar {
   display:none;
 }
 /* Hide scrollbar for IE, Edge and Firefox  */
-.main{
-  -ms-overflow-style: none;   /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.main-iframe{
+  -ms-overflow-style: none;   
+  /* IE and Edge */
+  scrollbar-width: none;  
+  /* Firefox */
+}
+.main-iframe{
+  width:100%;
+  height:100vh;
 }
 
 /* element selector */

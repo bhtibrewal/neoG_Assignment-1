@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
 @import 'css/app.css';
-@import 'css/chips.css';
-@import 'css/cards.css';
-@import 'css/drawers.css';
-@import 'css/badge.css';
-@import 'css/snackbar.css';
-@import 'css/dialog.css';
 @import 'css/sidebar.css';
-@import 'css/header.css';
-@import 'css/tab.css';
+
+@import 'chip/chip.css';
+@import 'card/card.css';
+@import 'drawer/drawer.css';
+@import 'badge/badge.css';
+@import 'snackbar/snackbar.css';
+@import 'dialog/dialog.css';
+@import 'header/header.css';
+@import 'tab/tab.css';
